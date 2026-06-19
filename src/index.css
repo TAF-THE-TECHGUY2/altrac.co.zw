@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-white text-brand-black font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-extrabold tracking-tight;
+  }
+}
+
+@layer components {
+  /* Primary brand button (Corporate Blue) */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-blue px-6 py-3
+      font-bold text-white shadow-card transition-all duration-200
+      hover:bg-brand-blue-dark hover:shadow-card-hover focus:outline-none
+      focus-visible:ring-4 focus-visible:ring-brand-blue/40 active:scale-[0.98];
+  }
+
+  /* High-emphasis CTA button (Safety Yellow) */
+  .btn-accent {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-yellow px-6 py-3
+      font-bold text-brand-black shadow-card transition-all duration-200
+      hover:bg-brand-yellow-dark hover:shadow-card-hover focus:outline-none
+      focus-visible:ring-4 focus-visible:ring-brand-yellow/50 active:scale-[0.98];
+  }
+
+  /* Dark / secondary button */
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-brand-black px-6 py-3
+      font-bold text-white shadow-card transition-all duration-200 hover:bg-brand-ink
+      focus:outline-none focus-visible:ring-4 focus-visible:ring-white/30 active:scale-[0.98];
+  }
+
+  /* Outline button (used over dark backgrounds) */
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/70
+      px-6 py-3 font-bold text-white transition-all duration-200 hover:border-brand-yellow
+      hover:text-brand-yellow focus:outline-none focus-visible:ring-4 focus-visible:ring-white/30
+      active:scale-[0.98];
+  }
+
+  /* WhatsApp green button */
+  .btn-whatsapp {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg bg-[#25D366] px-6 py-3
+      font-bold text-white shadow-card transition-all duration-200 hover:bg-[#1FB855]
+      hover:shadow-card-hover focus:outline-none focus-visible:ring-4 focus-visible:ring-[#25D366]/40
+      active:scale-[0.98];
+  }
+
+  .section {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .eyebrow {
+    @apply inline-flex items-center gap-2 text-sm font-bold uppercase tracking-[0.2em]
+      text-brand-blue;
+  }
+}
