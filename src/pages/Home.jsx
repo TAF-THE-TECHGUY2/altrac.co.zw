@@ -56,32 +56,36 @@ export default function Home() {
           <div className="max-w-3xl animate-fade-up">
             <p className="eyebrow mb-4 text-brand-yellow">
               <span className="inline-block h-2 w-2 rounded-full bg-brand-yellow" />
-              ALTRAC · Plant Hire · Civil &amp; Construction
+              Road &amp; dam Construction · Plant Hire · Earthmoving Equipment
+              <span className="inline-block h-2 w-2 rounded-full bg-brand-yellow" />
             </p>
             <h1 className="text-4xl font-black leading-[1.05] sm:text-5xl md:text-6xl">
-              Earthmoving Equipment Rental in{' '}
-              <span className="text-brand-blue">Harare &amp; Zimbabwe</span>
+              Construction &amp; Earthmoving Solutions {' '}
+              {/*Earthmoving Equipment Rental in{' '}*/}
+              <span className="text-brand-blue">Across Zimbabwe</span>
             </h1>
             <p className="mt-6 max-w-2xl text-lg text-white/80 sm:text-xl">
-              Get the machines you need, when you need them — fast, affordable, and
-              professional.
+              Delivering dependable equipment, skilled operators, and project support for
+              infrastructure, mining, commercial and civil works.
+              {/* Get the machines you need, when you need them — fast, affordable, and
+              professional. */}
             </p>
 
             <div className="mt-9 flex flex-col gap-3 sm:flex-row sm:items-center">
               <a href="#catalog" className="btn-accent text-base">
-                Browse Vehicles
+                Browse Fleet
                 <ArrowRightIcon className="h-5 w-5" />
               </a>
-              <WhatsAppButton
+              {/*<WhatsAppButton
                 message={`${waGreeting} I'd like to enquire about hiring equipment.`}
                 className="text-base"
               >
                 Enquire on WhatsApp
-              </WhatsAppButton>
+              </WhatsAppButton> */}
             </div>
 
             <ul className="mt-10 flex flex-wrap gap-x-6 gap-y-2 text-sm font-semibold text-white/70">
-              {['Serviced & site-ready fleet', 'Operators available', 'Fast local delivery'].map(
+              {['Serviced & site-ready fleet', ' Experienced operators', 'Fast local delivery'].map(
                 (item) => (
                   <li key={item} className="flex items-center gap-2">
                     <CheckIcon className="h-4 w-4 text-brand-yellow" />
