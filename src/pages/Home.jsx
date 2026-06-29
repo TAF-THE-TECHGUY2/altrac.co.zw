@@ -112,6 +112,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ===================== SERVICES OFFERED ====================== */}
       <section className="bg-white">
               <div className="section grid gap-12 py-16 sm:py-20 lg:grid-cols-2">
                 <div>
@@ -129,31 +130,7 @@ export default function Home() {
               </div>
             </section>
 
-      {/* ===================== EQUIPMENT CATALOG ====================== */}
-      <EquipmentCatalog />
-
-      {/* ================ NOT SURE WHICH EQUIPMENT? ==================== */}
-      <section className="bg-brand-yellow">
-        <div className="section flex flex-col items-center justify-between gap-6 py-10 text-center md:flex-row md:text-left">
-          <div className="max-w-2xl">
-            <h2 className="text-2xl font-black text-brand-black sm:text-3xl">
-              Not Sure Which Equipment You Need?
-            </h2>
-            <p className="mt-2 text-brand-black/75">
-              Tell us about your project and our team will recommend the right machine for
-              the job — and get you a quick quote.
-            </p>
-          </div>
-          <WhatsAppButton
-            message={`${waGreeting} I'm not sure which equipment I need. Here's my project: `}
-            className="shrink-0 bg-brand-black text-white hover:bg-brand-ink focus-visible:ring-brand-black/30"
-          >
-            Ask Us on WhatsApp
-          </WhatsAppButton>
-        </div>
-      </section>
-
-      {/* ===================== OUR GUARANTEE =========================== */}
+            {/* ===================== OUR GUARANTEE =========================== */}
       <section className="bg-brand-steel/40">
         <div className="section py-16 sm:py-20">
           <div className="mx-auto max-w-2xl text-center">
@@ -183,6 +160,32 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* ===================== EQUIPMENT CATALOG ====================== */}
+      <EquipmentCatalog />
+
+      {/* ================ NOT SURE WHICH EQUIPMENT? ==================== */}
+      <section className="bg-brand-yellow">
+        <div className="section flex flex-col items-center justify-between gap-6 py-10 text-center md:flex-row md:text-left">
+          <div className="max-w-2xl">
+            <h2 className="text-2xl font-black text-brand-black sm:text-3xl">
+              Not Sure Which Equipment You Need?
+            </h2>
+            <p className="mt-2 text-brand-black/75">
+              Tell us about your project and our team will recommend the right machine for
+              the job — and get you a quick quote.
+            </p>
+          </div>
+          <WhatsAppButton
+            message={`${waGreeting} I'm not sure which equipment I need. Here's my project: `}
+            className="shrink-0 bg-brand-black text-white hover:bg-brand-ink focus-visible:ring-brand-black/30"
+          >
+            Ask Us on WhatsApp
+          </WhatsAppButton>
+        </div>
+      </section>
+
+      
 
       {/* ===================== FEATURED PROJECTS ====================== */}
       <section className="bg-brand-black text-white">
