@@ -51,7 +51,6 @@ export const SERVICES = [
   'Airport runways',
   'Residential & office buildings',
   'Water & sewer reticulation',
-  'Telecommunications',
   'Irrigation schemes',
 ]
 

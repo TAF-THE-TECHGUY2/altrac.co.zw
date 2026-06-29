@@ -123,7 +123,7 @@ export default function About() {
       {/* Services + Clientele */}
       <section className="bg-white">
         <div className="section grid gap-12 py-16 sm:py-20 lg:grid-cols-2">
-          <div>
+          {/* <div>
             <p className="eyebrow mb-3">What We Do</p>
             <h2 className="text-3xl font-black text-brand-black sm:text-4xl">Services we offer</h2>
             <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
@@ -134,7 +134,7 @@ export default function About() {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
           <div>
             <p className="eyebrow mb-3">Who We Serve</p>
             <h2 className="text-3xl font-black text-brand-black sm:text-4xl">Our clientele</h2>

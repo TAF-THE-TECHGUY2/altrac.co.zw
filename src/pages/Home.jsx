@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import EquipmentCatalog from '../components/EquipmentCatalog'
 import WhatsAppButton from '../components/WhatsAppButton'
-import { STATS } from '../data/company'
+import { STATS, SERVICES } from '../data/company'
 import { PROJECTS } from '../data/projects'
 import { waGreeting } from '../lib/site'
 import {
@@ -111,6 +111,23 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      <section className="bg-white">
+              <div className="section grid gap-12 py-16 sm:py-20 lg:grid-cols-2">
+                <div>
+                  <p className="eyebrow mb-3">What We Do</p>
+                  <h2 className="text-3xl font-black text-brand-black sm:text-4xl">Services we offer</h2>
+                  <ul className="mt-6 grid gap-2.5 sm:grid-cols-2">
+                    {SERVICES.map((s) => (
+                      <li key={s} className="flex items-start gap-2.5 text-sm font-medium text-brand-black">
+                        <CheckIcon className="mt-0.5 h-5 w-5 shrink-0 text-brand-blue" />
+                        {s}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </section>
 
       {/* ===================== EQUIPMENT CATALOG ====================== */}
       <EquipmentCatalog />
