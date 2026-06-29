@@ -14,7 +14,7 @@ export default function EquipmentCatalog() {
       <div className="section py-16 sm:py-20">
         <div className="mx-auto max-w-2xl text-center">
           <p className="eyebrow mb-3 text-brand-blue">Equipment Catalog</p>
-          <h2 className="text-3xl font-black sm:text-4xl">Browse Our Hire Fleet</h2>
+          <h2 className="text-3xl font-black sm:text-4xl">Browse Our Fleet</h2>
           <p className="mt-3 text-white/60">
             Filter by category, add machines to your enquiry, or reserve a unit instantly.
           </p>
