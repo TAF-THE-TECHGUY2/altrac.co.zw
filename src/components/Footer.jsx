@@ -89,8 +89,8 @@ export default function Footer() {
 
       <div className="border-t border-white/10">
         <div className="section flex flex-col items-center justify-between gap-2 py-5 text-xs text-white/50 sm:flex-row">
-          <p>© {year} {SITE.name}. All rights reserved.</p>
-          <p>Earthmoving Equipment Rental · Harare, Zimbabwe</p>
+          <p>© {year} {SITE.name}. All rights reserved. </p>
+          <p>Website designed and developed by BitLab Media.</p>
         </div>
       </div>
     </footer>
