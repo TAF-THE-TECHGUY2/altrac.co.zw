@@ -54,7 +54,7 @@ export const CATALOG = [
     qty: 1,
     description:
       'Powerful crawler dozer designed for site preparation, material pushing and demanding earthmoving operations.',
-    image: '/equipment/cat-d6r-dozer.jpg',
+    image: '/equipment/cat-d6-dozer.jpg',
   },
   {
     id: 'cat-d7h',
@@ -86,7 +86,7 @@ export const CATALOG = [
     qty: 1,
     description:
       'Heavy-duty excavator suited to bulk earthworks, trenching, foundations and general civil construction.',
-    image: '/equipment/22-ton-excavator.jpg',
+    image: '/equipment/cat-320-exacavator.jpg',
   },
 
   // ---------------------------- TLBS ----------------------------------
@@ -124,16 +124,7 @@ export const CATALOG = [
   },
 
   // ---------------------------- ROLLERS ----------------------------------
-  {
-    id: '20-ton-pneumatic-roller',
-    name: '20 Ton Pneumatic Roller',
-    category: 'roller',
-    categoryLabel: 'Pneumatic Roller',
-    qty: 1,
-    description:
-      'Pneumatic roller designed for road compaction, surface finishing and achieving uniform density.',
-    image: '/equipment/shantui-20t-roller.jpg',
-  },
+
   {
     id: 'case-14-ton-roller',
     name: 'CASE 14 Ton Roller',
@@ -142,7 +133,7 @@ export const CATALOG = [
     qty: 1,
     description:
       'Heavy compaction roller suited to road construction, earthworks and preparation of base layers.',
-    image: '/equipment/case-14-ton-roller.jpg',
+    image: '/equipment/case-14t-roller.jpg',
   },
   {
     id: 'shantui-19t',
@@ -162,7 +153,7 @@ export const CATALOG = [
     qty: 1,
     description:
       'Heavy-duty roller designed for effective compaction of soil, gravel and road construction layers.',
-    image: '/equipment/shantui-22t-roller.jpg',
+    image: '/equipment/shantui-20t-roller.jpg',
   },
   {
     id: 'shantui-26t',
@@ -184,7 +175,7 @@ export const CATALOG = [
     qty: 4,
     description:
       'Large-capacity tipper truck for transporting soil, gravel, sand, rubble and other bulk construction materials.',
-    image: '/equipment/20m3-tipper-truck.jpg',
+    image: '/equipment/foden-tipper.jpg',
   },
 
   // ---------------------------- LOWBEDS ----------------------------------
