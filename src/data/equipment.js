@@ -8,7 +8,7 @@
 // branded placeholder automatically — nothing else needs to change.
 // -----------------------------------------------------------------------------
 
-// Filter categories used by the buttons on the Home + Vehicles pages.
+// Filter categories used by the equipment filter buttons.
 // `key` must match the `category` field on each equipment item.
 export const CATEGORIES = [
   { key: 'all', label: 'All' },

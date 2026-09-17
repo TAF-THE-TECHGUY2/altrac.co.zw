@@ -204,18 +204,33 @@ export function RollerIcon({ className = 'h-12 w-12' }) {
   )
 }
 
+/**
+ * Maps an equipment category key to its placeholder glyph.
+ * Handles both taxonomies in use: the singular keys from `data/catalog.js`
+ * and the older plural keys from `data/equipment.js`.
+ */
 export function CategoryGlyph({ category, className }) {
   switch (category) {
+    case 'grader':
     case 'graders':
+    case 'roadworks':
       return <GraderIcon className={className} />
+    case 'tipper':
     case 'tippers':
+    case 'lowbed':
+    case 'waterbowser':
       return <TruckIcon className={className} />
+    case 'loader':
     case 'loaders':
+    case 'tlb':
       return <LoaderIcon className={className} />
+    case 'dozer':
     case 'dozers':
       return <DozerIcon className={className} />
+    case 'roller':
     case 'compactors':
       return <RollerIcon className={className} />
+    case 'excavator':
     case 'excavators':
     default:
       return <ExcavatorIcon className={className} />

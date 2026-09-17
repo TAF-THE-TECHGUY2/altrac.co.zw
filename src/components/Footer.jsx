@@ -34,7 +34,6 @@ export default function Footer() {
           </h4>
           <ul className="mt-4 space-y-2.5 text-sm text-white/70">
             <li><Link to="/" className="hover:text-brand-yellow">Home</Link></li>
-            <li><Link to="/vehicles" className="hover:text-brand-yellow">Vehicles &amp; Equipment</Link></li>
             <li><Link to="/projects" className="hover:text-brand-yellow">Projects</Link></li>
             <li><Link to="/about" className="hover:text-brand-yellow">About Us</Link></li>
             <li><Link to="/contact" className="hover:text-brand-yellow">Contact Us</Link></li>

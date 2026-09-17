@@ -7,11 +7,35 @@ import { useCart } from '../context/CartContext'
 
 const NAV_LINKS = [
   { to: '/', label: 'Home', end: true },
-  { to: '/vehicles', label: 'Vehicles' },
   { to: '/projects', label: 'Projects' },
   { to: '/about', label: 'About Us' },
   { to: '/contact', label: 'Contact Us' },
 ]
+
+// Reusable search field (used on desktop centre + mobile row). Declared at
+// module scope so it keeps a stable component identity — defining it inside
+// Navbar would remount the input on every keystroke and drop focus.
+function SearchForm({ term, setTerm, onSubmit, className = '' }) {
+  return (
+    <form onSubmit={onSubmit} className={`flex w-full ${className}`} role="search">
+      <input
+        type="search"
+        value={term}
+        onChange={(e) => setTerm(e.target.value)}
+        placeholder="Search vehicle..."
+        aria-label="Search vehicles"
+        className="w-full rounded-l-md border-0 bg-white px-4 py-2.5 text-sm text-brand-black placeholder:text-brand-gray-light focus:outline-none focus:ring-2 focus:ring-brand-blue/60"
+      />
+      <button
+        type="submit"
+        aria-label="Search"
+        className="flex shrink-0 items-center justify-center rounded-r-md bg-brand-ink px-4 text-white ring-1 ring-white/15 transition-colors hover:bg-brand-blue"
+      >
+        <SearchIcon className="h-5 w-5" />
+      </button>
+    </form>
+  )
+}
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -36,30 +60,9 @@ export default function Navbar() {
   const handleSearch = (e) => {
     e.preventDefault()
     const q = term.trim()
-    navigate(q ? `/vehicles?q=${encodeURIComponent(q)}` : '/vehicles')
+    navigate(q ? `/?q=${encodeURIComponent(q)}#catalog` : '/#catalog')
     setOpen(false)
   }
-
-  // Reusable search field (used on desktop centre + mobile row).
-  const SearchForm = ({ className = '' }) => (
-    <form onSubmit={handleSearch} className={`flex w-full ${className}`} role="search">
-      <input
-        type="search"
-        value={term}
-        onChange={(e) => setTerm(e.target.value)}
-        placeholder="Search vehicle..."
-        aria-label="Search vehicles"
-        className="w-full rounded-l-md border-0 bg-white px-4 py-2.5 text-sm text-brand-black placeholder:text-brand-gray-light focus:outline-none focus:ring-2 focus:ring-brand-blue/60"
-      />
-      <button
-        type="submit"
-        aria-label="Search"
-        className="flex shrink-0 items-center justify-center rounded-r-md bg-brand-ink px-4 text-white ring-1 ring-white/15 transition-colors hover:bg-brand-blue"
-      >
-        <SearchIcon className="h-5 w-5" />
-      </button>
-    </form>
-  )
 
   const linkClass = ({ isActive }) =>
     `relative px-1 py-1 text-[15px] font-semibold transition-colors ${
@@ -76,7 +79,7 @@ export default function Navbar() {
 
         {/* Centred search (desktop) */}
         <div className="hidden flex-1 justify-center px-4 md:flex">
-          <SearchForm className="max-w-2xl" />
+          <SearchForm term={term} setTerm={setTerm} onSubmit={handleSearch} className="max-w-2xl" />
         </div>
 
         {/* Right actions */}
