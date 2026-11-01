@@ -2,8 +2,9 @@ import { waLink, waGreeting } from '../lib/site'
 import { WhatsAppIcon } from './icons'
 
 // Persistent floating WhatsApp action button (bottom-right on every page).
-export default function FloatingWhatsApp() {
-  const message = `${waGreeting} I'd like to enquire about equipment rental.`
+export default function FloatingWhatsApp({
+  message = `${waGreeting} I'd like to enquire about equipment rental.`,
+}) {
   return (
     <a
       href={waLink(message)}

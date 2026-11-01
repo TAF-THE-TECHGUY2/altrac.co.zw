@@ -4,6 +4,7 @@ import Navbar from './Navbar'
 import Footer from './Footer'
 import FloatingWhatsApp from './FloatingWhatsApp'
 import CartDrawer from './CartDrawer'
+import { DEVELOPMENT } from '../data/development'
 
 export default function Layout() {
   const { pathname, hash } = useLocation()
@@ -25,7 +26,7 @@ export default function Layout() {
         <Outlet />
       </main>
       <Footer />
-      <FloatingWhatsApp />
+      <FloatingWhatsApp message={pathname === '/developments' ? `Hello ALTRAC, I’m interested in ${DEVELOPMENT.name}. Please send me stand availability and pricing.` : undefined} />
       <CartDrawer />
     </div>
   )
