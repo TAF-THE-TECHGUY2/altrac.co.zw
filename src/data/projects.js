@@ -1,58 +1,36 @@
-// -----------------------------------------------------------------------------
-// Project track record, sourced from the ALTRAC company profile.
-// -----------------------------------------------------------------------------
-
+// Selected project records in ALTRAC COMPANY PROFILE - July 2026.docx.
+// Null client/period fields are not specified in the profile; do not infer them.
 export const PROJECT_CATEGORIES = [
   { key: 'all', label: 'All' },
-  { key: 'roads', label: 'Roads' },
-  { key: 'dams', label: 'Dams & Water' },
-  { key: 'civils', label: 'Civils & Housing' },
-  { key: 'mining', label: 'Mining & Earthmoving' },
+  { key: 'roads', label: 'Roads & Transport Infrastructure' },
+  { key: 'civils', label: 'Urban & Industrial Development' },
+  { key: 'dams', label: 'Dams, Water & Irrigation' },
+  { key: 'mining', label: 'Mining Support' },
 ]
 
 export const PROJECTS = [
-  // ------------------------------- ROADS ------------------------------------
-  { name: 'Ruya – Mukumbura Road', client: 'Ministry of Transport', scope: 'Construction of roads', period: '2022 – present', category: 'roads' },
-  { name: 'New Parliament Access Roads', client: 'Ministry of Transport — Mash West', scope: 'Building of roads', period: '2017 – present', category: 'roads' },
-  { name: 'Harare – Masvingo Highway', client: 'Ministry of Transport', scope: 'Plant hire for highway construction', period: '2011 – 2012', category: 'roads' },
-  { name: 'Chivhu – Nyazura', client: 'Ministry of Transport — Mash East', scope: 'Road, bridge & tollgate repairs', period: '2016', category: 'roads' },
-  { name: 'Pure Gold, Mabvuku', client: 'Pure Gold', scope: 'Road construction', period: '2025', category: 'roads' },
+  { name: 'Ruya–Mukumbura Road', client: 'Ministry of Transport', scope: 'Road construction', period: '2022–2024', category: 'roads', featured: true },
+  { name: 'Kadoma Housing Development', client: 'Aluta Land Developers', scope: 'Roads and sewer infrastructure', period: '2017–current', category: 'civils', featured: true },
+  { name: 'Pure Gold, Mabvuku', client: null, scope: 'Road construction', period: '2025', category: 'roads' },
   { name: 'Ngezi', client: 'Chacco', scope: 'Road construction', period: '2024', category: 'roads' },
-  { name: 'Domboshava Road', client: 'Ministry of Transport', scope: 'Road reconstruction & repairs', period: '2012', category: 'roads' },
-  { name: 'Mahuwe', client: 'Ministry of Transport — Mash Central', scope: 'Gravel road repair', period: '2017', category: 'roads' },
-  { name: 'Mazoe Road', client: 'Ministry of Transport — Mash Central', scope: 'Gravel road repair & drain opening', period: '2017', category: 'roads' },
-  { name: 'Nyaure Bridge', client: 'Ministry of Transport — Mash West', scope: 'Tarred road repair & reseal', period: '2017', category: 'roads' },
-  { name: 'Victory Park', client: 'Kadoma City', scope: 'Road formation', period: '2016', category: 'roads' },
-  { name: 'Zaoga University (Zhou)', client: 'Zada Construction', scope: 'Grading of gravel roads', period: '2016', category: 'roads' },
-  { name: 'Driefontein Road', client: 'Chirumanzi RDC', scope: 'Construction of gravel road', period: '2004', category: 'roads' },
-  { name: 'Muzarabani Roads', client: 'Muzarabani RDC', scope: 'Construction of roads', period: '2015', category: 'roads' },
-  { name: 'Mbare', client: 'Netfuels', scope: 'Road repair & traffic islands', period: '2015 – 2016', category: 'roads' },
+  { name: 'Prospect Industrial Park', client: null, scope: 'Roads and stormwater drainage for industrial development', period: null, category: 'civils' },
+  { name: 'Ezee Tiles Zimbabwe', client: null, scope: 'Land clearing', period: '2025', category: 'civils' },
+  { name: 'Nyaure Bridge', client: 'Ministry of Transport', scope: 'Resealing and tarred-road repairs', period: '2017', category: 'roads' },
+  { name: 'Chivhu–Nyazura', client: 'Ministry of Transport', scope: 'Road, bridge and tollgate repairs', period: '2016', category: 'roads' },
+  { name: 'Jekwa, Chidamoyo & Makumbe Dams', client: null, scope: 'Earth-fill dam and related construction works', period: '2000–2002', category: 'dams', featured: true },
+  { name: 'Willowbank', client: 'Bathroom Boutique', scope: 'Car park and associated civil works', period: '2014–2015', category: 'civils' },
+  { name: 'Tokwe–Ngundu', client: 'ZINWA', scope: 'Land clearing and irrigation preparation', period: '2007–2008', category: 'dams' },
+  { name: 'Bindura Nickel Corporation', client: null, scope: 'Silica-ore mining and delivery to the Bindura smelter', period: '1989–2008', category: 'mining', featured: true },
+]
 
-  // ---------------------------- DAMS & WATER --------------------------------
-  { name: 'Jekwa Dam', client: 'Ministry of Water', scope: 'Construction of earth-fill dam', period: '2000 – 2001', category: 'dams' },
-  { name: 'Makumbe Dam', client: 'Ministry of Water', scope: 'Construction of earth-fill dam', period: '2002', category: 'dams' },
-  { name: 'Chidamoyo Dam', client: 'Hurungwe RDC', scope: 'Construction of earth-fill dam', period: '2002', category: 'dams' },
-  { name: 'Pfunyaguwo Dam', client: 'Pfura RDC', scope: 'Construction of dam', period: '1999', category: 'dams' },
-  { name: 'Nzvimbo Dam', client: 'Ministry of Water', scope: 'Construction of spillway', period: '1999', category: 'dams' },
-  { name: 'Tokwe – Ngundu', client: 'ZINWA', scope: 'Land clearing & irrigation preparation', period: '2007 – 2008', category: 'dams' },
-
-  // ------------------------- CIVILS & HOUSING -------------------------------
-  { name: 'Kadoma Housing Development', client: 'Aluta Land Developers', scope: 'Roads & sewer for housing development', period: '2017 – present', category: 'civils' },
-  { name: 'Goshen Housing, Budiriro', client: 'Goshen Consortium Housing Co-operative', scope: 'Roads for housing development', period: '2013 – present', category: 'civils' },
-  { name: 'Nehanda Housing, Budiriro', client: 'Nehanda Housing Co-operative', scope: 'Roads for housing development', period: '2012', category: 'civils' },
-  { name: 'Johane Masowe Housing, Budiriro', client: 'Johane Masowe Co-operative', scope: 'Roads for housing development', period: '2014', category: 'civils' },
-  { name: 'Prospect Industrial Park', client: 'Prospect Industrial Park Syndicate', scope: 'Roads & storm-water drainage', period: '2012 – 2014', category: 'civils' },
-  { name: 'Marimba Housing Estate', client: 'Marimba Consortium', scope: 'Roads for housing estate development', period: '2009', category: 'civils' },
-  { name: 'Willowbank Intersection', client: 'Bathroom Boutique', scope: 'Car park & all civil works', period: '2014 – 2015', category: 'civils' },
-  { name: 'Ezee Tiles', client: 'Ezee Tiles Zimbabwe', scope: 'Land clearing', period: '2025', category: 'civils' },
-
-  // --------------------------- MINING & EARTHMOVING -------------------------
-  { name: 'SLAMS Quarry', client: 'Bindura Nickel Corporation', scope: 'Mining & delivery of silica ore to the smelter', period: '1989 – 2008', category: 'mining' },
-  { name: 'Bindura Nickel — Silica & Slag', client: 'Bindura Nickel Corporation', scope: 'Silica supply and movement of slag from the smelter', period: 'Recent', category: 'mining' },
-  { name: 'Trojan Mine Stadium', client: 'Bindura Nickel Corporation', scope: 'Construction of stadium', period: '2006', category: 'mining' },
+export const PROJECT_SECTORS = [
+  { key: 'roads', title: 'Roads & Transport Infrastructure', text: 'Construction, upgrading, rehabilitation, resealing, drainage and plant support.' },
+  { key: 'civils', title: 'Urban & Industrial Development', text: 'Roads, reticulation, stormwater systems, parking areas and civil works.' },
+  { key: 'dams', title: 'Dams, Water & Irrigation', text: 'Earth dams, spillways, land clearing, water-management and irrigation preparation.' },
+  { key: 'mining', title: 'Mining Support', text: 'Bulk earthworks, access and haul roads, site preparation and civil-infrastructure support.' },
 ]
 
 export function filterProjects(categoryKey) {
   if (!categoryKey || categoryKey === 'all') return PROJECTS
-  return PROJECTS.filter((p) => p.category === categoryKey)
+  return PROJECTS.filter(project => project.category === categoryKey)
 }

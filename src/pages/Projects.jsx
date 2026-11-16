@@ -2,12 +2,12 @@ import { useState } from 'react'
 import PageHero from '../components/PageHero'
 import WhatsAppButton from '../components/WhatsAppButton'
 import { FinalCTA } from './Home'
-import { PROJECT_CATEGORIES, filterProjects, PROJECTS } from '../data/projects'
+import { PROJECT_CATEGORIES, filterProjects, PROJECTS, PROJECT_SECTORS } from '../data/projects'
 
 const HIGHLIGHTS = [
-  { value: '5', label: 'Dams & spillways built' },
-  { value: '25+', label: 'Road projects delivered' },
-  { value: 'Gov’t', label: 'Trusted by ministries' },
+  { value: String(PROJECTS.length), label: 'Selected project records' },
+  { value: String(PROJECT_SECTORS.length), label: 'Project sectors' },
+  { value: '1996', label: 'Company incorporated' },
   { value: '1989', label: 'Earliest project on record' },
 ]
 
@@ -19,8 +19,8 @@ export default function Projects() {
     <>
       <PageHero
         eyebrow="Track Record"
-        title="Projects We've Delivered"
-        subtitle="From national highways and earth-fill dams to housing estates and mine works — a snapshot of the projects ALTRAC has completed across Zimbabwe."
+        title="Our Project Experience"
+        subtitle="Selected experience in roads, development infrastructure, dams, water, irrigation and mining support, as presented in our July 2026 company profile."
       />
 
       {/* Highlights */}
@@ -71,14 +71,14 @@ export default function Projects() {
                 key={`${p.name}-${p.period}`}
                 className="flex flex-col rounded-2xl border border-brand-steel bg-white p-6 shadow-card transition-all hover:-translate-y-1 hover:shadow-card-hover"
               >
-                <div className="flex items-center justify-between gap-3">
+                <div className="flex flex-wrap items-center justify-between gap-2">
                   <span className="rounded-full bg-brand-yellow px-3 py-0.5 text-[11px] font-bold uppercase tracking-wide text-brand-black">
                     {PROJECT_CATEGORIES.find((c) => c.key === p.category)?.label}
                   </span>
-                  <span className="text-xs font-semibold text-brand-gray-light">{p.period}</span>
+                  {p.period && <span className="shrink-0 text-xs font-semibold text-brand-gray-light">{p.period}</span>}
                 </div>
                 <h3 className="mt-4 text-lg font-extrabold text-brand-black">{p.name}</h3>
-                <p className="mt-1 text-sm font-semibold text-brand-blue">{p.client}</p>
+                {p.client && <p className="mt-1 text-sm font-semibold text-brand-blue">{p.client}</p>}
                 <p className="mt-2 flex-1 text-sm leading-relaxed text-brand-gray-light">{p.scope}</p>
               </article>
             ))}
@@ -86,20 +86,26 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Narrative note */}
       <section className="bg-brand-steel/40">
-        <div className="section flex flex-col items-center justify-between gap-6 py-10 text-center md:flex-row md:text-left">
-          <p className="max-w-3xl text-brand-gray">
-            We've also completed roads at Wedza–Sadza, Beatrice Road, Mutawatawa, Gypsum,
-            Olivine and the Sugar Refinery, plus infrastructural development at Willowbank
-            Industrial Park, Marimba, Westwood and the Airport Casino.
-          </p>
-          <WhatsAppButton
-            message="Hi ALTRAC, I'd like to discuss a project. Here are the details: "
-            className="shrink-0"
-          >
-            Discuss Your Project
-          </WhatsAppButton>
+        <div className="section py-14 sm:py-16">
+          <p className="eyebrow mb-3">Selected Project Sectors</p>
+          <h2 className="text-3xl font-black text-brand-black">Experience across infrastructure sectors</h2>
+          <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {PROJECT_SECTORS.map(sector => (
+              <div key={sector.key} className="rounded-2xl border border-brand-steel bg-white p-6">
+                <h3 className="text-lg font-bold text-brand-black">{sector.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-brand-gray-light">{sector.text}</p>
+              </div>
+            ))}
+          </div>
+          <div className="mt-10 flex flex-col items-start justify-between gap-6 md:flex-row md:items-center">
+            <p className="max-w-3xl text-sm leading-relaxed text-brand-gray">
+              Client references and supporting project records are available for tender and prequalification submissions where applicable.
+            </p>
+            <WhatsAppButton message="Hi ALTRAC, I'd like to discuss a project. Here are the details: " className="shrink-0">
+              Discuss Your Project
+            </WhatsAppButton>
+          </div>
         </div>
       </section>
 

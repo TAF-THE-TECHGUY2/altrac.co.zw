@@ -1,148 +1,167 @@
-// -----------------------------------------------------------------------------
-// Company content sourced from the ALTRAC (Chiswell Investments) company profile.
-// Edit here to update the About / Home credibility content.
-// -----------------------------------------------------------------------------
+// Source: ALTRAC COMPANY PROFILE - July 2026.docx supplied by the client.
+// Keep website statements aligned with that profile.
 
 export const PROFILE = {
-  intro:
-    'Chiswell Investments (Pvt) Ltd, trading as ALTRAC, is a duly registered company formed in May 1996. Our core business is road construction, bulk earthworks, municipal roads and drainage structures, industrial parks, airport runways, water and sewer reticulation, and irrigation schemes.',
-  story: [
-    'Since its formation on 20 May 1996, ALTRAC has delivered a wide range of projects — both on a plant-hire basis and on contract. In recent years our focus has shifted toward full civil-engineering projects, building the reputation and capacity to take on any major civil works, from dams and roads to large infrastructural developments.',
-    'We sit in the CE/A category of the Ministry of Local Government, Public Works and National Housing, and of CIFOZ — the highest grading, with no upper limit on the value of public-sector works we can be contracted to deliver. We are also registered with the Ministry of Transport & Communications Roads Department as a vendor for construction works.',
-    'With an asset base of roughly US$5 million in immovable assets and US$5 million in plant and equipment, and a team of highly qualified, experienced personnel, ALTRAC offers timeous, quality and cost-effective services across the building and construction industry.',
+  "intro": "ALTRAC is the trading identity of Chiswell Investments (Pvt) Limited, a Zimbabwean civil-engineering and infrastructure company incorporated in May 1996.",
+  "story": [
+    "From its beginnings in plant hire, the company has developed the capacity to deliver civil-engineering projects on a contract basis. Its experience covers road construction, bulk earthworks, drainage, water and sewer reticulation, earth dams, industrial and residential infrastructure, and mining-support works.",
+    "ALTRAC combines experienced personnel, dependable earthmoving equipment and an established workshop capability to provide practical, time-conscious and cost-effective solutions. The company serves central government, local authorities, corporate organisations, mines, parastatals, developers and private clients."
   ],
-  vision:
-    'To be the preferred business partner in the development of comprehensive infrastructural services within Zimbabwe and the Southern African region.',
-  mission:
-    'To provide central government, local authorities, corporate bodies, mines and individual clients with quality and cost-effective civil and structural engineering services.',
+  "vision": "To be Zimbabwe’s trusted civil-engineering, infrastructure and mining-support partner, recognised across Southern Africa for technical excellence, reliable delivery, exemplary safety and sustainable value.",
+  "mission": "To deliver high-quality, cost-effective civil-engineering, structural-engineering and mining-support solutions through skilled people, dependable equipment and responsible construction practices that protect the workforce, safeguard the environment, strengthen communities and create lasting value for clients.",
+  "leadershipIntro": "ALTRAC’s management structure combines executive oversight with operations, finance and administration, plant and logistics, and site-delivery functions."
 }
 
 export const STATS = [
-  { value: 'Est. 1996', label: 'Trusted since' },
-  { value: 'CE / A', label: 'Highest grading' },
-  { value: 'US$10M+', label: 'Asset base' },
-  { value: '43', label: 'Employees & artisans' },
+  {
+    "value": "Est. 1996",
+    "label": "Incorporated in May 1996"
+  },
+  {
+    "value": "43",
+    "label": "Permanent employees"
+  },
+  {
+    "value": "CIFOZ",
+    "label": "Industry membership"
+  },
+  {
+    "value": "ZBCA",
+    "label": "Industry membership"
+  }
 ]
 
 export const VALUES = [
   {
-    title: 'Professionalism & Integrity',
-    text: 'We commit to professionalism and integrity in everything we do, at all times.',
+    "title": "Integrity",
+    "text": "We act honestly, transparently and professionally."
   },
   {
-    title: 'Quality & Excellence',
-    text: 'We provide quality and excellence in every service we deliver to our customers.',
+    "title": "Quality & Excellence",
+    "text": "We pursue dependable workmanship and continual improvement."
   },
   {
-    title: 'Safety First',
-    text: 'We implement a safe working environment for our workers and the communities around us.',
+    "title": "Health & Safety",
+    "text": "We plan and work to protect people, assets and the public."
   },
   {
-    title: 'Skilled People',
-    text: 'We maintain highly qualified, experienced and well-motivated personnel.',
+    "title": "Environmental Responsibility",
+    "text": "We minimise avoidable impacts and manage resources responsibly."
   },
+  {
+    "title": "Teamwork & Accountability",
+    "text": "We collaborate, take ownership and deliver on commitments."
+  }
 ]
 
-export const SERVICES = [
-  'Road construction',
-  'Bulk earthworks',
-  'Municipal roads & drainage structures',
-  'Industrial parks',
-  'Airport runways',
-  'Residential & office buildings',
-  'Water & sewer reticulation',
-  'Irrigation schemes',
+export const SERVICE_DETAILS = [
+  {
+    "title": "Road Construction",
+    "text": "New roads, upgrades, rehabilitation and associated civil works."
+  },
+  {
+    "title": "Bulk Earthworks",
+    "text": "Clearing, excavation, embankments and site preparation."
+  },
+  {
+    "title": "Drainage Structures",
+    "text": "Stormwater drainage, culverts, channels and related structures."
+  },
+  {
+    "title": "Water & Sewer",
+    "text": "Reticulation networks and supporting civil infrastructure."
+  },
+  {
+    "title": "Dams & Irrigation",
+    "text": "Earth dams, spillways, land preparation and irrigation works."
+  },
+  {
+    "title": "Industrial & Residential",
+    "text": "Roads, platforms, parking areas and development services."
+  }
+]
+
+export const SERVICES = [...SERVICE_DETAILS.map(service => service.title), "Mining-support works"]
+
+export const MINING_CAPABILITIES = [
+  "Mine-access and haul-road construction",
+  "Bulk earthworks and mine-site preparation",
+  "Drainage and stormwater management",
+  "Dams and water-management structures",
+  "Concrete and structural civil works",
+  "Plant and equipment support",
+  "Rehabilitation of roads and disturbed construction areas"
 ]
 
 export const CLIENTELE = [
-  'Government of Zimbabwe',
-  'Local authorities',
-  'Parastatals',
-  'Mines',
-  'Corporate organisations',
-  'Individual clients',
+  "Central government",
+  "Local authorities",
+  "Corporate organisations",
+  "Mines",
+  "Parastatals",
+  "Developers",
+  "Private clients"
 ]
 
 export const DEPARTMENTS = [
-  'General administration',
-  'Projects',
-  'Finance & administration',
-  'Transport & workshops',
-  'Quality & loss control',
+  "Executive oversight",
+  "Operations",
+  "Finance & administration",
+  "Plant & logistics",
+  "Site delivery"
 ]
 
 export const TEAM = [
   {
-    name: 'Alroy Ian Fourie',
-    role: 'Managing Director',
-    bio: 'A qualified diesel fitter with over 25 years’ experience working with earthmoving plant. He founded the company in 1996 with a fleet of five tractors and has grown it into a major heavy-earthmoving operation.',
+    "name": "Alroy Ian Fourie",
+    "role": "Managing Director",
+    "bio": "Ian founded ALTRAC in 1996, starting with five tractors and a vision to build a dependable, equipment-driven construction business. A qualified diesel fitter with more than 25 years of hands-on experience, he brings deep knowledge of earthmoving plant, civil construction and infrastructure delivery. Under his leadership, ALTRAC has grown from a small plant-hire operation into an established civil-engineering and infrastructure contractor. His practical leadership and understanding of the industry continue to shape strategic decisions and guide the company forward."
   },
   {
-    name: 'Eng. Wonder Mutematsaka',
-    role: 'Contracts Manager',
-    bio: 'More than 26 years’ post-graduate experience across mining and construction. Formerly Contracts Manager at the Gulliver Group, with considerable civil-engineering experience in Zimbabwe and the SADC region.',
+    "name": "Pr. Eng. Alroy Aiden Fourie, PMP",
+    "role": "Operations Director",
+    "bio": "Aiden is a Professional Engineer and PMP-certified Project Manager with experience in roads, materials engineering, quality assurance and regional infrastructure development. During five years at Bitumen World, he progressed from Site Engineer to Materials Engineer and contributed to the Masvingo–Beitbridge Highway, Seke Road and New Parliament access roads. He led technical recommendations for Foamed Bitumen Stabilisation on the JICA Makuti section and participated in PPP feasibility studies involving the Bulawayo–Victoria Falls corridor, Botswana, Mozambique and Zambia. He received the CIPMZ Outstanding Quality Assurance Manager of the Year Award in 2025 and was recognised among CIPMZ’s 2026 40 Under 40 Young Project Leaders in Zimbabwe."
   },
   {
-    name: 'Bridgit Arundel',
-    role: 'Finance & Admin Manager',
-    bio: 'Leads the company’s finance and administration function, keeping projects well-run and accountable.',
+    "name": "Bridgit Arundel",
+    "role": "Finance & Administration Manager",
+    "bio": "Bridgit oversees ALTRAC’s financial administration and the systems supporting its commercial and operational activities. She helps maintain financial discipline, administrative efficiency and effective coordination between management, project teams, suppliers and other stakeholders. Her responsibilities support financial planning, expenditure control, record management and the day-to-day processes required to keep projects running effectively. Her organised, detail-focused approach provides a dependable administrative foundation for responsible growth and successful project delivery."
   },
   {
-    name: 'Sultan Fazilahmed',
-    role: 'Workshop Manager',
-    bio: 'A Class 1 diesel plant fitter and workshop manager for over 10 years. He has been with the company since its inception, starting as a diesel plant fitter.',
-  },
-  {
-    name: 'Phillip Muganda',
-    role: 'Workshop Foreman',
-    bio: 'A Class 1 diesel plant fitter with over 20 years’ post-apprentice experience. He was appointed workshop foreman in 2010.',
-  },
+    "name": "Sultan Fazilahmed",
+    "role": "Plant & Logistics Manager",
+    "bio": "Sultan is a Class 1 diesel plant fitter with extensive experience maintaining and managing heavy earthmoving equipment. He oversees plant maintenance, equipment mobilisation, spare-parts coordination and the movement of machinery and resources between the workshop and project sites. Working with management, operators, workshop personnel and site teams, he helps identify mechanical risks, coordinate maintenance and minimise downtime. His hands-on leadership, technical expertise and understanding of fleet logistics ensure ALTRAC’s projects are supported by dependable, job-ready machinery."
+  }
 ]
 
-export const CERTIFICATIONS = [
-  { name: 'CIFOZ Membership', detail: 'Gen-Contractor Civils — Category “A”' },
-  { name: 'Government Grading', detail: 'CE/A — highest grade, no upper works limit' },
-  { name: 'Certificate of Incorporation', detail: 'Reg. No. 3683/96 — incorporated 20 May 1996' },
-  { name: 'VAT Registered', detail: 'ZIMRA VAT Reg. 220200553' },
-  { name: 'Tax Clearance (ITF263)', detail: 'Tax position satisfactory' },
-  { name: 'NSSA Compliant', detail: 'Reg. No. 0124861V' },
+export const MEMBERSHIPS = [
+  "CIFOZ",
+  "ZBCA"
 ]
 
-export const MEMBERSHIPS = ['CIFOZ', 'ZBCA']
-
-export const REFERENCES = [
+export const SUPPORTING_DOCUMENTS = [
   {
-    quote:
-      'The continued outsourcing of equipment was a result of commitment and reliability on the part of Chiswell Investments, to our satisfaction. We are pleased to inform you that we have a good relationship.',
-    by: 'Provincial Road Engineer',
-    org: 'Ministry of Transport — Mashonaland Central Province',
+    "name": "Corporate records",
+    "detail": "Certificate of incorporation and current company-registration records."
   },
   {
-    quote:
-      'Chiswell Investments has been our supplier of earthmoving machines for over 6 years. We can gladly recommend them to anyone in terms of reliability and efficiency.',
-    by: 'Ephraim Chafukapasi, Mine Manager',
-    org: 'Derbyshire Stone (Wimfair Investments)',
+    "name": "Tax & statutory compliance",
+    "detail": "VAT registration and current valid tax-clearance certificate."
   },
   {
-    quote:
-      'I would highly recommend this company for further work — their honesty and commitment to the job proved an invaluable asset to the development.',
-    by: 'Sean Day',
-    org: 'Bathroom Boutique',
+    "name": "Industry memberships",
+    "detail": "Current CIFOZ, ZBCA and other relevant membership certificates."
   },
-]
-
-export const SUPPLIERS = [
-  'Dyno Nobel Explosives',
-  'Metalock',
-  'Turnall Fibre',
-  'Bitumen World',
-  'Lafarge Cement',
-  'Sino Zimbabwe',
-  'Hume Pipes',
-  'Barzem',
-  'Torres Zimbabwe',
-  'Derbyshire Quarry',
-  'Supersands',
-  'Proplastics',
-  'Winsten Precast',
+  {
+    "name": "Employment compliance",
+    "detail": "Current NSSA compliance certificate and related statutory records."
+  },
+  {
+    "name": "Experience evidence",
+    "detail": "Client references, contracts, completion certificates and project-specific compliance documents."
+  },
+  {
+    "name": "Plant evidence",
+    "detail": "Ownership or hire records, inspection records and evidence of current availability."
+  }
 ]

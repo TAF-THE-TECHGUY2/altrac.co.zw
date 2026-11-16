@@ -30,11 +30,7 @@ const GUARANTEES = [
   },
 ]
 
-const FEATURED_PROJECTS = PROJECTS.filter((p) =>
-  ['Harare – Masvingo Highway', 'Jekwa Dam', 'New Parliament Access Roads', 'SLAMS Quarry'].includes(
-    p.name,
-  ),
-)
+const FEATURED_PROJECTS = PROJECTS.filter(project => project.featured)
 
 export default function Home() {
   return (
@@ -102,7 +98,7 @@ export default function Home() {
       <section className="bg-brand-blue">
         <div className="section grid grid-cols-2 gap-6 py-8 lg:grid-cols-4">
           {STATS.map((s) => (
-            <div key={s.label} className="text-center text-white">
+            <div key={s.value} className="text-center text-white">
               <p className="text-2xl font-black sm:text-3xl">{s.value}</p>
               <p className="mt-0.5 text-xs font-semibold uppercase tracking-wide text-white/75">
                 {s.label}
@@ -206,7 +202,7 @@ export default function Home() {
               <div key={p.name} className="rounded-2xl border border-white/10 bg-brand-ink p-6">
                 <span className="text-xs font-semibold text-brand-yellow">{p.period}</span>
                 <h3 className="mt-2 text-lg font-extrabold">{p.name}</h3>
-                <p className="mt-1 text-sm text-white/55">{p.client}</p>
+                {p.client && <p className="mt-1 text-sm text-white/55">{p.client}</p>}
                 <p className="mt-3 text-sm leading-relaxed text-white/70">{p.scope}</p>
               </div>
             ))}

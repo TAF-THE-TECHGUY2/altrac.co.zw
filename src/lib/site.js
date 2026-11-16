@@ -5,7 +5,7 @@
 
 export const SITE = {
   name: 'ALTRAC',
-  legalName: 'Chiswell Investments (Pvt) Ltd',
+  legalName: 'Chiswell Investments (Pvt) Limited',
   tradeName: 'ALTRAC',
   tagline: 'Masters of Machinery',
   regNo: '3683/96',
@@ -21,7 +21,7 @@ export const CONTACT = {
   phone2Digits: '263773615620',
   email: 'afourie@mweb.co.zw',
   email2: 'mail@chiswell-investments.com',
-  website: 'www.chiswell-investments.com',
+  website: 'www.altrac.co.zw',
   address: '1 Cheviot Road / 1st Avenue, Waterfalls, Harare',
   // Used for the Google Maps embed/link
   mapQuery: 'Cheviot Road, Waterfalls, Harare, Zimbabwe',

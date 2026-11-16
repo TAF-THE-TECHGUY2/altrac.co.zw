@@ -87,3 +87,13 @@ configuration; uploading the ZIP alone does not apply this rule.
 
 For a Git-connected Amplify app, `amplify.yml` installs locked dependencies,
 builds the app and publishes `dist/`. The same rewrite rule is still required.
+
+### July 2026 company profile update
+
+Company introduction, vision, mission, all five values, four leadership biographies,
+services, mining support and supporting-document descriptions are aligned to the
+client-supplied `ALTRAC COMPANY PROFILE - July 2026.docx`. Both directors are shown
+separately from management on About Us. The Projects page contains the profile's
+12 selected entries, including the combined Jekwa, Chidamoyo and Makumbe dams
+entry. Client names and dates omitted from the profile are left unspecified.
+Home uses the same company statistics, services and featured project records.
